@@ -87,35 +87,6 @@ def PRINTRECORD():
             print(resource[0], " "*5, resource[1], resource[2], resource[3], resource[4])
         print("Number of resources: ", len(temporary_list))
         print()
-
-##        #option2:
-##        loop through each line in loanrecord [until you find the first resource that is unreturned]
-##            remove trailing whitespace
-##            if length is 46
-##                store the datedueback ->earliest
-##                break
-##        loop through from the back [find the last resource unreturned]
-##            remove trailing whitespace
-##            if length is 46
-##                store the datedueback ->latest
-##                break
-##            store the datedueback -> latest
-##        create the dictionary of dates from earliest to latest
-##        create another dictionary
-##        loop through resource details and store the resource no as key, and the title and type as value
-##        create a temporary list
-##        loop through the loan list
-##            remove trailing whitespace
-##            if length is 46
-##                if the datedueback is same as the previous
-##                    obtain the resource no, student id, studentname
-##                    use second dict to obtain resource type and title
-##                    append data to temporary list
-##                else append temp list to dict[previous datedueback]
-##                    re initialize list
-##                    obtain the datedueback, resource no, student id, studentname
-##                    use second dict to obtain resource type and title
-##                    append data to temporary list
                         
         #close files
         loan_file.close()
