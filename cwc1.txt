@@ -1,0 +1,4 @@
+1. The librarian wants the books in the library to be included as another type of resource in the computer system. 
+Discuss any changes that need to be made to the classes used in Paper 3(B).
+
+A new subclass Book has to be created with Resource as its super class. Its constructor would require the resource number, title, date acquired and resource type from the super class. It would also need the author and number of pages. There has to be an author accessor, number of pages accessor, author modifier and number of pages modifier. Finally, it would also need a helper function to display all data.
